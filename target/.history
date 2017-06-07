@@ -1,0 +1,4 @@
+package
+clean
+clean compile package
+exit
