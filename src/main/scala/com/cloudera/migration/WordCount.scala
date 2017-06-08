@@ -15,7 +15,8 @@ object WordCount {
 
     val sc = new SparkContext(conf)
 
-    val textFile = sc.parallelize(Seq("this is first line", "This is second line", "This is third line"))
+    //val textFile = sc.textFile("file:///home/cloudera/aditya/ReadFile.txt") // Reading a text file from Local Environment
+    val textFile =  sc.textFile("hdfs:///user/aditya/files/ReadFile.txt")
 
     val counts = textFile.flatMap(line => line.split(" "))
       .map(word => (word, 1))

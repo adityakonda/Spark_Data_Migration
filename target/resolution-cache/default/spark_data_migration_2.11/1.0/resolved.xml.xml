@@ -4,7 +4,7 @@
 		module="spark_data_migration_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170608102031"
+		publication="20170608113336"
 	>
 		<description>
 		Spark_Data_Migration
