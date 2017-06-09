@@ -4,7 +4,7 @@
 		module="spark_data_migration_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170608113336"
+		publication="20170608142058"
 	>
 		<description>
 		Spark_Data_Migration
@@ -35,5 +35,6 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.6.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="1.6.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
